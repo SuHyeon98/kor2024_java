@@ -42,7 +42,15 @@ public class BoardService1 {
                 }
             }
             if ( choose == 2 ) { // choose 가 2면 '게시물 출력'
-
+                if (contents1 != null ) { // 만약에 첫 번째 게시물이 존재하면
+                    System.out.printf("작성자 : %s, 내용 : %s ", writer1, contents1);
+                }
+                if (contents2 != null ) { // 만약에 두 번째 게시물이 존재하면
+                    System.out.printf("작성자 : %s, 내용 : %s ", writer2, contents2);
+                }
+                if (contents3 != null ) { // 만약에 세 번째 게시물이 존재하면
+                    System.out.printf("작성자 : %s, 내용 : %s ", writer3, contents3);
+                }
             }
         } // while end
 
